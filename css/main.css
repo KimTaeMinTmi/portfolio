@@ -2,9 +2,9 @@
 
 * {margin: 0; padding: 0;}
 li {list-style: none;}
-a {text-decoration: none; color: #FFF;}
+a {text-decoration: none; color:rgb(65, 65, 65);}
 html, body {
-    color: #FFF;
+    color: rgb(90, 90, 90);
     /* min-width: 1280px; */
     background-color: #FFB2A6;
 }
@@ -211,14 +211,19 @@ header div a {
     display: flex;
 }
 .motion .motion_cont .list_cont .items {
-    width: 49%;
+    background-color: #ffbdb0;
     border: 7px solid #FFF89A;
     box-sizing: border-box;
     margin: 0 auto;
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
 }
 /* 유튜브 영상 크기 조절 */
 .youtube {
-    width: 100%;
+    width: 60%;
 }
 .youtube .youtube_in {
     width: 100%;
@@ -235,8 +240,9 @@ header div a {
 }
 
 .motion .list_cont .items .info {
-    background-color: #ffbdb0;
     padding: 30px;
+    width: 40%; 
+    box-sizing: border-box;
 }
 .motion .list_cont .items .info h4 {
     font-size: 30px;
@@ -253,6 +259,22 @@ header div a {
 .motion .list_cont .items .info dl dd:hover a {
     text-decoration: underline;
 }
+/* 선택자 추가 썸네일 이미지 */
+.motion .list_cont .items .images {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.motion .list_cont .items .images figure {
+    width: 24%;
+}
+.motion .list_cont .items .images figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 /* .g_ver05 */
 .g_ver05 {
@@ -499,7 +521,13 @@ footer p {
         word-break: break-all;
         /* 줄바꿈 : 글자별 */
     }
-    .motion .motion_cont .list_cont .items {width: 95%;}
+    .motion .motion_cont .list_cont .items {
+        width: 100%; 
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        align-items: center;
+    }
     .motion .list_cont .items .info dl dt {width: 20%;}
     .motion .list_cont .items .info dl dd {width: 70%;
     word-break: break-all;}
